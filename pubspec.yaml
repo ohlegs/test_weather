@@ -38,6 +38,11 @@ dependencies:
   dio: ^5.4.3+1
   flutter_bloc: ^8.1.5
   geolocator: ^11.0.0
+  geocode: ^1.0.3
+  bloc: ^8.1.4
+  geocoding_resolver: ^0.0.3+2
+  dropdown_textfield: ^1.0.8
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
