@@ -89,8 +89,8 @@ class _CardInfoState extends State<CardInfo> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Image.network(
-                        height: 170,
-                        width: 150,
+                        height: 150,
+                        width: 120,
                         fit: BoxFit.scaleDown,
                         errorBuilder: (context, error, stackTrace) =>
                             const Icon(
@@ -99,16 +99,16 @@ class _CardInfoState extends State<CardInfo> {
                         "https://openweathermap.org/img/wn/${widget.weatherInfo!.weather![0].icon}@4x.png"),
                     Text(
                       "${(widget.weatherInfo!.main!.temp! - 273.15).toInt()} °C",
-                      style: const TextStyle(fontSize: 30, color: Colors.white),
+                      style: const TextStyle(fontSize: 20, color: Colors.white),
                     ),
                     Text("${widget.weatherInfo!.weather![0].main}",
                         style:
-                            const TextStyle(fontSize: 30, color: Colors.white)),
+                            const TextStyle(fontSize: 20, color: Colors.white)),
                     Text(
                         textAlign: TextAlign.center,
                         "${_sity != null ? "${_sity!}," : _sity} $_country",
                         style:
-                            const TextStyle(fontSize: 30, color: Colors.white)),
+                            const TextStyle(fontSize: 20, color: Colors.white)),
                   ],
                 ),
               ],
